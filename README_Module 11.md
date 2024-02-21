@@ -1,17 +1,7 @@
 Practical Application Assignment 11.1: What Drives the Price of a Car?
 
 Problem Statement:
-To frame the task, throughout these practical applications we will refer back to a standard process in industry for data projects called CRISP-DM. This process provides a framework for working through a data problem. Your first step in this application will be to read through a brief overview of CRISP-DM Links to an external site..
-
-Data:
-You will work with a used cars dataset Links to an external site.for this assignment.
-
-Deliverables:
 After understanding, preparing, and modeling your data, write up a basic report that details your primary findings. Your audience for this report is a group of used car dealers interested in fine-tuning their inventory.
-
-Submission Instructions:
-Submit the website URL to your public-facing GitHub repository
-Your Learning Facilitators will grade your submission according to the rubric below
 
 
 Response:
@@ -23,7 +13,7 @@ Furthermore, 'size' and 'cylinders' are simplified, possibly due to their limite
 
 Finally, filtering out vehicles priced below $400 helps focus the analysis on vehicles of potential interest while minimizing the influence of outliers. Despite these challenges, these preprocessing steps streamline the dataset, making it more manageable for subsequent analysis and modeling, and potentially improving the performance and interpretability of the resulting models.
 
-This criterion is linked to a Learning OutcomeFindings
+This criterion is linked to a Learning Outcome Findings
 · Clearly stated business understanding of problem
 · Clean and organized notebook with data cleaning
 · Correct and concise interpretation of descriptive and inferential statistics
