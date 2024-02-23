@@ -19,19 +19,25 @@ The data was modeled using multiple regression models: Features selection and Ri
 
 Evaluation:
 The models were assessed on the test set, achieving a mean squared error (MSE) of 17.81 for the multiple “n-features” selector pipe and 5 features being the optimal features. 
-
 Selected Features Coefficient Table
-Odometer	Age	Model	Condition Fair	Fuel Diesel
--0.00371	-0.554558	0.843563	-6.300303	2.69708
+Odometer	  Age	     Model	   Condition    Fair	Fuel Diesel
+-0.00371	  -0.555	  0.843	   -6.300    	  2.69708
 
 
 Predicted Values Vs Actuals:
- 
+For the optimized “alpha” scaled Ridged regression the MSE was 16.99. The scaled Ridge model top coefficients are listed below with model, age, odometer, fuel_gas having the largest coeficients.
+The Scaled Ridge Model top coefficients are listed below:
+odometer: -1.574
+age: -1.485
+fuel_gas: -0.776
+condition_fair: -0.4910
+fuel_other: -0.410
+type_convertible: 0.323
+manufacturer: 0.389
+type_pickup: 0.395
+model: 2.989
 
-For the optimized “alpha” scaled Ridged regression the MSE was 16.99. Permutation importance analysis gauges feature significance as seen on the table below with year/age, odometer, model, and manufacturer being the highest.
-
-
-
+Permutation importance analysis gauges feature significance as seen on the table below with year/age, odometer, model, and manufacturer being the highest.
 Ridge regression Permutation Importance Table (top 6)
  	Column	Permutation Importance
 1	year	-121.20
@@ -47,7 +53,7 @@ Deployment:
 The model's coefficients and selected features are extracted, primed for deployment as an API for potential production use.
 
 Conclusion:
-Leveraging the CRISP-DM methodology, a linear regression model is fine-tuned for used car price prediction, delivering commendable performance, and furnishing insights into pricing determinants.
+Leveraging the CRISP-DM methodology, a linear regression (Ridge) model is fine-tuned for used car price prediction, delivering commendable performance, and furnishing insights into pricing determinants.
 
 Next Steps and Recommendations:
 Future investigations may explore additional feature inclusion or experiment with alternative regression algorithms to further enhance model efficacy and deepen comprehension of pricing influences.
